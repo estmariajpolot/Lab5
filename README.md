@@ -32,6 +32,10 @@ El sistema nervioso autónomo (SNA) regula funciones involuntarias del cuerpo, i
 ## 1.1 Sistema simpático 
 - Se activa en situaciones de estrés o actividad (“lucha o huida”).
 - Efectos en el corazón:
-Aumenta la frecuencia cardíaca (taquicardia).
-Incrementa la fuerza de contracción.
-Reduce la variabilidad de la frecuencia cardíaca (HRV).
+Aumenta la frecuencia cardíaca (taquicardia), incrementa la fuerza de contracción, reduce la variabilidad de la frecuencia cardíaca (HRV).
+## 1.2 Sistema parasimpático
+- Predomina en estados de reposo (“reposo y digestión”).
+- Actúa principalmente a través del nervio vago.
+- Efectos en el corazón: Disminuye la frecuencia cardíaca, aumenta la variabilidad cardíaca (HRV).
+
+El equilibrio entre ambos sistemas regula el ritmo cardíaco.
