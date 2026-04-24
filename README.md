@@ -87,8 +87,16 @@ Baja HRV → estrés, fatiga o posibles patologías
 Es una herramienta gráfica para analizar la serie de intervalos R-R.
 
 - Cómo se construye
+  
 Se grafica:
 
 $$
 RR_{n+1} \text{ vs } RR_n
 $$
+
+- Interpretación
+Forma de nube elíptica:
+
+Ancha → alta variabilidad (parasimpático dominante)
+
+Estrecha → baja variabilidad (simpático dominante)
