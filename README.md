@@ -55,3 +55,7 @@ La HRV (Heart Rate Variability) es la variación en el tiempo entre latidos cons
 1. Se registra la señal de ECG.
 2. Se identifican los picos R.
 3. Se calcula el tiempo entre picos consecutivos:
+   
+   $$
+RR_i = t_{i+1} - t_i
+$$
