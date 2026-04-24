@@ -47,10 +47,12 @@ La respiración influye directamente en la frecuencia cardíaca mediante un fen�
 - Durante la **inspiración**:
   
   → Disminuye la actividad parasimpática.
+  
   → Aumenta la frecuencia cardíaca.
 - Durante la **espiración**:
   
   → Aumenta la actividad parasimpática.
+  
   → Disminuye la frecuencia cardíaca.
 
 Esto genera variaciones en los intervalos R-R del ECG.
