@@ -105,4 +105,5 @@ Estrecha → baja variabilidad (simpático dominante)
 - Parámetros importantes
   
 → SD1: variabilidad a corto plazo
+
 → SD2: variabilidad a largo plazo
