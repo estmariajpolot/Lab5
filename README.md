@@ -104,6 +104,6 @@ Estrecha → baja variabilidad (simpático dominante)
 
 - Parámetros importantes
   
-   → SD1: variabilidad a corto plazo
-
-   → SD2: variabilidad a largo plazo
+   → SD1: eje corto de la elipse: variabilidad a corto plazo (latido a latido), refleja actividad parasimpática.
+  
+   → SD2: eje largo: variabilidad a largo plazo, refleja actividad simpática + parasimpática. 
