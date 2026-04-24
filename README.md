@@ -48,3 +48,10 @@ La respiración influye directamente en la frecuencia cardíaca mediante un fen�
 - Durante la **espiración**: Aumenta la actividad parasimpática, disminuye la frecuencia cardíaca
 
 Esto genera variaciones en los intervalos R-R del ECG.
+
+## 3. Variabilidad de la Frecuencia Cardíaca (HRV)
+La HRV (Heart Rate Variability) es la variación en el tiempo entre latidos consecutivos del corazón.
+- Cómo se obtiene
+1. Se registra la señal de ECG.
+2. Se identifican los picos R.
+3. Se calcula el tiempo entre picos consecutivos:
