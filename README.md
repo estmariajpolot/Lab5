@@ -51,6 +51,7 @@ Esto genera variaciones en los intervalos R-R del ECG.
 
 ## 3. Variabilidad de la Frecuencia Cardíaca (HRV)
 La HRV (Heart Rate Variability) es la variación en el tiempo entre latidos consecutivos del corazón.
+
 - Cómo se obtiene
 1. Se registra la señal de ECG.
 2. Se identifican los picos R.
@@ -59,3 +60,8 @@ La HRV (Heart Rate Variability) es la variación en el tiempo entre latidos cons
    $$
 RR_i = t_{i+1} - t_i
 $$
+
+- Importancia
+Indicador del estado del sistema nervioso autónomo.
+Alta HRV → buena adaptación fisiológica
+Baja HRV → estrés, fatiga o posibles patologías
