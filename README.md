@@ -71,5 +71,7 @@ $$
 
 - Importancia
 Indicador del estado del sistema nervioso autónomo.
+
 Alta HRV → buena adaptación fisiológica.
+
 Baja HRV → estrés, fatiga o posibles patologías
