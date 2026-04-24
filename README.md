@@ -95,8 +95,14 @@ RR_{n+1} \text{ vs } RR_n
 $$
 
 - Interpretación
+  
 Forma de nube elíptica:
 
 Ancha → alta variabilidad (parasimpático dominante)
 
 Estrecha → baja variabilidad (simpático dominante)
+
+- Parámetros importantes
+  
+→ SD1: variabilidad a corto plazo
+→ SD2: variabilidad a largo plazo
