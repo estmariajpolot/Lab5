@@ -40,6 +40,8 @@ Aumenta la frecuencia cardíaca (taquicardia), incrementa la fuerza de contracci
 
 El equilibrio entre ambos sistemas regula el ritmo cardíaco.
 
+---
+
 ## 2. Efecto de la respiración sobre la actividad cardíaca
 La respiración influye directamente en la frecuencia cardíaca mediante un fenómeno llamado:
 
@@ -56,6 +58,8 @@ La respiración influye directamente en la frecuencia cardíaca mediante un fen�
   → Disminuye la frecuencia cardíaca.
 
 Esto genera variaciones en los intervalos R-R del ECG.
+
+---
 
 ## 3. Variabilidad de la Frecuencia Cardíaca (HRV)
 La HRV (Heart Rate Variability) es la variación en el tiempo entre latidos consecutivos del corazón.
@@ -76,3 +80,12 @@ Indicador del estado del sistema nervioso autónomo.
 Alta HRV → buena adaptación fisiológica.
 
 Baja HRV → estrés, fatiga o posibles patologías
+
+---
+## 4. Diagrama de Poincaré
+
+Es una herramienta gráfica para analizar la serie de intervalos R-R.
+
+- Cómo se construye
+Se grafica:
+$RR_n \text{ vs } RR_{n+1}$
