@@ -39,3 +39,12 @@ Aumenta la frecuencia cardíaca (taquicardia), incrementa la fuerza de contracci
 - Efectos en el corazón: Disminuye la frecuencia cardíaca, aumenta la variabilidad cardíaca (HRV).
 
 El equilibrio entre ambos sistemas regula el ritmo cardíaco.
+
+## 2. Efecto de la respiración sobre la actividad cardíaca
+La respiración influye directamente en la frecuencia cardíaca mediante un fenómeno llamado:
+
+## 2.1 Arritmia sinusal respiratoria
+- Durante la **inspiración**: Disminuye la actividad parasimpática, aumenta la frecuencia cardíaca.
+- Durante la **espiración**: Aumenta la actividad parasimpática, disminuye la frecuencia cardíaca
+
+Esto genera variaciones en los intervalos R-R del ECG.
