@@ -44,8 +44,12 @@ El equilibrio entre ambos sistemas regula el ritmo cardíaco.
 La respiración influye directamente en la frecuencia cardíaca mediante un fenómeno llamado:
 
 ## 2.1 Arritmia sinusal respiratoria
-- Durante la **inspiración**: Disminuye la actividad parasimpática, aumenta la frecuencia cardíaca.
-- Durante la **espiración**: Aumenta la actividad parasimpática, disminuye la frecuencia cardíaca
+- Durante la **inspiración**:
+  → Disminuye la actividad parasimpática.
+  → Aumenta la frecuencia cardíaca.
+- Durante la **espiración**:
+  → Aumenta la actividad parasimpática.
+  → Disminuye la frecuencia cardíaca.
 
 Esto genera variaciones en los intervalos R-R del ECG.
 
@@ -62,6 +66,6 @@ RR_i = t_{i+1} - t_i
 $$
 
 - Importancia
-Indicador del estado del sistema nervioso autónomo.
-Alta HRV → buena adaptación fisiológica
-Baja HRV → estrés, fatiga o posibles patologías
+. Indicador del estado del sistema nervioso autónomo.
+. Alta HRV → buena adaptación fisiológica.
+. Baja HRV → estrés, fatiga o posibles patologías
