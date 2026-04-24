@@ -70,6 +70,7 @@ RR_i = t_{i+1} - t_i
 $$
 
 - Importancia
+  
 Indicador del estado del sistema nervioso autónomo.
 
 Alta HRV → buena adaptación fisiológica.
