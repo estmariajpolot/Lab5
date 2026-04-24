@@ -106,4 +106,16 @@ Estrecha → baja variabilidad (simpático dominante)
   
    → SD1: eje corto de la elipse: variabilidad a corto plazo (latido a latido), refleja actividad parasimpática.
   
-   → SD2: eje largo: variabilidad a largo plazo, refleja actividad simpática + parasimpática. 
+   → SD2: eje largo: variabilidad a largo plazo, refleja actividad simpática + parasimpática.
+  
+  ---
+  ## 5. Plan de acción
+  
+  <p align="center">
+  <img src="mapa.jpeg" width="700">
+</p>
+
+<p align="center">
+  <em> Plan de acción diagrama de flujo </em>
+</p>
+
