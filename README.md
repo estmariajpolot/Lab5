@@ -45,9 +45,11 @@ La respiración influye directamente en la frecuencia cardíaca mediante un fen�
 
 ## 2.1 Arritmia sinusal respiratoria
 - Durante la **inspiración**:
+  
   → Disminuye la actividad parasimpática.
   → Aumenta la frecuencia cardíaca.
 - Durante la **espiración**:
+  
   → Aumenta la actividad parasimpática.
   → Disminuye la frecuencia cardíaca.
 
@@ -66,6 +68,6 @@ RR_i = t_{i+1} - t_i
 $$
 
 - Importancia
-. Indicador del estado del sistema nervioso autónomo.
-. Alta HRV → buena adaptación fisiológica.
-. Baja HRV → estrés, fatiga o posibles patologías
+Indicador del estado del sistema nervioso autónomo.
+Alta HRV → buena adaptación fisiológica.
+Baja HRV → estrés, fatiga o posibles patologías
