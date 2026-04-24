@@ -89,4 +89,6 @@ Es una herramienta gráfica para analizar la serie de intervalos R-R.
 - Cómo se construye
 Se grafica:
 
-$RR_n \text{ vs } RR_{n+1}$
+$$
+RR_{n+1} \text{ vs } RR_n
+$$
