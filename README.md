@@ -119,6 +119,7 @@ Estrecha → baja variabilidad (simpático dominante)
   <em> Plan de acción diagrama de flujo </em>
 </p>
 
+---
 ### Parte A - Adquisición de la señal ECG 
   <p align="center">
   <img src="Esquema.jpeg" width="700">
@@ -127,6 +128,13 @@ Estrecha → baja variabilidad (simpático dominante)
 <p align="center">
   <em> Esquema colocación de electrodos </em>
 </p>
+---
 
-  
+### Parte B - Pre-procesamiento de la señal
+----
+### Parte B - Análisis de la HRV en el dominio del tiempo 
+----
+### Parte C - Construcción del diagrama de Poincaré 
+
+
 
