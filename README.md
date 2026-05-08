@@ -1,4 +1,4 @@
-# Lab5
+# Variabilidad de la Frecuencia Cardíaca (HRV) y balance autonómico 
 
 ## Asignatura
 
@@ -10,7 +10,7 @@ Ingeniería Biomédica – Universidad Militar Nueva Granada
 
 ## Práctica de laboratorio
 
-**Lab5**
+**Variabilidad de la Frecuencia Cardíaca (HRV) y balance autonómico**
 
 ## Integrantes
 
