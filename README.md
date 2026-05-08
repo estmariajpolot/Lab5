@@ -119,3 +119,14 @@ Estrecha → baja variabilidad (simpático dominante)
   <em> Plan de acción diagrama de flujo </em>
 </p>
 
+### Parte A - Adquisición de la señal ECG 
+  <p align="center">
+  <img src="esquema.jpeg" width="700">
+</p>
+
+<p align="center">
+  <em> Esquema colocación de electrodos </em>
+</p>
+
+  
+
