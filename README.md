@@ -121,7 +121,7 @@ Estrecha → baja variabilidad (simpático dominante)
 
 ### Parte A - Adquisición de la señal ECG 
   <p align="center">
-  <img src="esquema.jpeg" width="700">
+  <img src="Esquema.jpeg" width="700">
 </p>
 
 <p align="center">
