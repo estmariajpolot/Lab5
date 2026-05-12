@@ -178,6 +178,21 @@ Estrecha → baja variabilidad (simpático dominante)
   <em> Segmento 2 Picos R-R </em>
 </p>
 
+<p align="center">
+  <img src="7.png" width="700">
+</p>
+
+<p align="center">
+  <em> Segmento 1 Nueva Señal </em>
+</p>
+<p align="center">
+  <img src="8.png" width="700">
+</p>
+
+<p align="center">
+  <em> Segmento 2 Nueva Señal </em>
+</p>
+
 ----
 ### Parte B - Análisis de la HRV en el dominio del tiempo 
 ----
