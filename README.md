@@ -193,10 +193,40 @@ Estrecha → baja variabilidad (simpático dominante)
   <em> Segmento 2 Nueva Señal </em>
 </p>
 
+
+
+
 ----
 ### Parte B - Análisis de la HRV en el dominio del tiempo 
+
+<p align="center">
+  <img src="11.png" width="700">
+</p>
+<p align="center">
+  <em> Datos HRV </em>
+</p>
+
 ----
 ### Parte C - Construcción del diagrama de Poincaré 
+
+<p align="center">
+  <img src="9.png" width="700">
+</p>
+<p align="center">
+  <em> Segmento 1 Diagrama Poincaré  </em>
+</p>
+<p align="center">
+  <img src="10.png" width="700">
+</p>
+<p align="center">
+  <em> Segmento 1 Diagrama Poincaré </em>
+</p>
+<p align="center">
+  <img src="12.png" width="700">
+</p>
+<p align="center">
+  <em> Datos Poincaré </em>
+</p>
 
 
 
