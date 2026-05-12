@@ -128,9 +128,56 @@ Estrecha → baja variabilidad (simpático dominante)
 <p align="center">
   <em> Esquema colocación de electrodos </em>
 </p>
+
+  <p align="center">
+  <img src="1.png" width="700">
+</p>
+
+<p align="center">
+  <em> Señal Original </em>
+</p>
 ---
 
 ### Parte B - Pre-procesamiento de la señal
+
+<p align="center">
+  <img src="2.png" width="700">
+</p>
+
+<p align="center">
+  <em> Señal Original y Filtrada </em>
+</p>
+
+<p align="center">
+  <img src="3.png" width="700">
+</p>
+
+<p align="center">
+  <em> Segmento 1 </em>
+</p>
+<p align="center">
+  <img src="4.png" width="700">
+</p>
+
+<p align="center">
+  <em> Segmento 2 </em>
+</p>
+
+<p align="center">
+  <img src="5.png" width="700">
+</p>
+
+<p align="center">
+  <em> Segmento 1 Picos R-R </em>
+</p>
+<p align="center">
+  <img src="6.png" width="700">
+</p>
+
+<p align="center">
+  <em> Segmento 2 Picos R-R </em>
+</p>
+
 ----
 ### Parte B - Análisis de la HRV en el dominio del tiempo 
 ----
