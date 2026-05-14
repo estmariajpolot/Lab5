@@ -53,7 +53,7 @@ En conjunto, este procedimiento permitió analizar el comportamiento temporal y 
 </p>
 
 <p align="center">
-  <em> Plan de acción diagrama de flujo </em>
+  <em> Diagrama de Flujo </em>
 </p>
 
 ---
