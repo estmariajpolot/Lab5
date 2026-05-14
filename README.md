@@ -199,6 +199,26 @@ El segmento 1 (0–120 s) muestra picos muy uniformes a ~700 unidades porque el 
   <em> Segmento 2 Picos R-R </em>
 </p>
 
+```python
+# Distancia mínima entre picos: 400 ms (frecuencia cardíaca máx. ~150 bpm)
+distancia = int(0.4 * fs)
+
+# Umbrales calculados a partir de cada segmento por separado
+altura1 = np.mean(ecg_2min) + 0.3 * np.std(ecg_2min)
+prom1   = 0.2 * np.std(ecg_2min)
+
+picos_1, _ = find_peaks(
+    ecg_2min,
+    distance=distancia,
+    prominence=prom1,
+    height=altura1
+)
+```
+Los puntos rojos funcionan bien en el segmento 1, debido a que la señal es muy regular (baja varianza), entonces el umbral media + 0.3·std queda justo debajo de todos los picos R reales y por encima de todo el ruido. Los puntos rojos caen perfectamente sobre cada onda R.
+En el segmento 2 hay algunas detecciones imperfectas debido a que al haber artefactos (picos anómalos de mayor amplitud), la media y la std del segmento se elevan ligeramente, subiendo el umbral. Algunos picos R reales quedan justo en el límite, y los artefactos generan detecciones adicionales o desplazadas.
+
+--
+
 <p align="center">
   <img src="7.png" width="700">
 </p>
