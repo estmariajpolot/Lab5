@@ -129,7 +129,7 @@ Estrecha → baja variabilidad (simpático dominante)
   <em> Esquema colocación de electrodos </em>
 </p>
 
-Se selecciona una mujer de 20 años como sujeto de prueba para adquirir la señal electrocardiográfica. La señal ECG se graba durante 4 minutos, de los cuales la participante permanece inmóvil y en silencio total durante los 2 primeros minutos; posteriormente, lee en voz alta un pasaje de un texto seleccionado por el equipo durante los 2 últimos minutos.
+Se selecciona una mujer de 19 años como sujeto de prueba para adquirir la señal electrocardiográfica. La señal ECG se graba durante 4 minutos, de los cuales la participante permanece inmóvil y en silencio total durante los 2 primeros minutos; posteriormente, lee en voz alta un pasaje de un texto seleccionado por el equipo durante los 2 últimos minutos.
 
 La toma de la señal electrocardiográfica se realiza mediante un BITalino y la correcta conexión de los cables. El electrodo con cable de color blanco se ubica en la región subclavicular izquierda, el electrodo con cable de color negro en la región subclavicular derecha y, por último, el electrodo con cable de color rojo en las costillas derechas.
 
@@ -155,21 +155,6 @@ Para que la frecuencia de muestreo y los niveles de cuantificación fueran aprop
   <em> Señal Original y Filtrada </em>
 </p>
 --
-<p align="center">
-  <img src="3.png" width="700">
-</p>
-
-<p align="center">
-  <em> Segmento 1 </em>
-</p>
-<p align="center">
-  <img src="4.png" width="700">
-</p>
-
-<p align="center">
-  <em> Segmento 2 </em>
-</p>
-
 ```python
 tiempo_limite = 2 * 60        # 120 segundos
 indice_2min = int(tiempo_limite * fs)
@@ -180,8 +165,25 @@ t_2min      = t[:indice_2min]
 ecg_restante = x_est[indice_2min:]  # Segmento 2: 120 s – final
 t_restante   = t[indice_2min:]
 ```
-El segmento 1 (0–120 s) muestra picos muy uniformes a ~700 unidades porque el sujeto estaba en reposo estable. El filtro Kalman ya eliminó el ruido de línea base. El segmento 2 (120–245 s) tiene mayor variabilidad en amplitud y algunos picos anómalos visibles, lo que sugiere movimiento o cambio fisiológico durante esa parte del registro.
+<p align="center">
+  <img src="3.png" width="700">
+</p>
 
+<p align="center">
+  <em> Segmento 1 </em>
+</p>
+
+El segmento 1 (0–120 s) muestra picos muy uniformes a ~700 unidades porque el sujeto estaba en reposo estable. El filtro Kalman ya eliminó el ruido de línea base.
+
+<p align="center">
+  <img src="4.png" width="700">
+</p>
+
+<p align="center">
+  <em> Segmento 2 </em>
+</p>
+
+El segmento 2 (120–245 s) tiene mayor variabilidad en amplitud y algunos picos anómalos visibles, lo que sugiere movimiento o cambio fisiológico durante esa parte del registro.
 --
 
 <p align="center">
