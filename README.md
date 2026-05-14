@@ -129,6 +129,12 @@ Estrecha → baja variabilidad (simpático dominante)
   <em> Esquema colocación de electrodos </em>
 </p>
 
+Se selecciona una mujer de 20 años como sujeto de prueba para adquirir la señal electrocardiográfica. La señal ECG se graba durante 4 minutos, de los cuales la participante permanece inmóvil y en silencio total durante los 2 primeros minutos; posteriormente, lee en voz alta un pasaje de un texto seleccionado por el equipo durante los 2 últimos minutos.
+
+La toma de la señal electrocardiográfica se realiza mediante un BITalino y la correcta conexión de los cables. El electrodo con cable de color blanco se ubica en la región subclavicular izquierda, el electrodo con cable de color negro en la región subclavicular derecha y, por último, el electrodo con cable de color rojo en las costillas derechas.
+
+---
+
   <p align="center">
   <img src="1.png" width="700">
 </p>
