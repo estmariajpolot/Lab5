@@ -154,7 +154,7 @@ Para que la frecuencia de muestreo y los niveles de cuantificación fueran aprop
 <p align="center">
   <em> Señal Original y Filtrada </em>
 </p>
---
+---
 
 ```python
 tiempo_limite = 2 * 60        # 120 segundos
@@ -186,22 +186,7 @@ El segmento 1 (0–120 s) muestra picos muy uniformes a ~700 unidades porque el 
 
 El segmento 2 (120–245 s) tiene mayor variabilidad en amplitud y algunos picos anómalos visibles, lo que sugiere movimiento o cambio fisiológico durante esa parte del registro.
 
---
-
-<p align="center">
-  <img src="5.png" width="700">
-</p>
-
-<p align="center">
-  <em> Segmento 1 Picos R-R </em>
-</p>
-<p align="center">
-  <img src="6.png" width="700">
-</p>
-
-<p align="center">
-  <em> Segmento 2 Picos R-R </em>
-</p>
+---
 
 ```python
 # Distancia mínima entre picos: 400 ms (frecuencia cardíaca máx. ~150 bpm)
@@ -218,10 +203,27 @@ picos_1, _ = find_peaks(
     height=altura1
 )
 ```
+<p align="center">
+  <img src="5.png" width="700">
+</p>
+
+<p align="center">
+  <em> Segmento 1 Picos R-R </em>
+</p>
+
 Los puntos rojos funcionan bien en el segmento 1, debido a que la señal es muy regular (baja varianza), entonces el umbral media + 0.3·std queda justo debajo de todos los picos R reales y por encima de todo el ruido. Los puntos rojos caen perfectamente sobre cada onda R.
+
+<p align="center">
+  <img src="6.png" width="700">
+</p>
+
+<p align="center">
+  <em> Segmento 2 Picos R-R </em>
+</p>
+
 En el segmento 2 hay algunas detecciones imperfectas debido a que al haber artefactos (picos anómalos de mayor amplitud), la media y la std del segmento se elevan ligeramente, subiendo el umbral. Algunos picos R reales quedan justo en el límite, y los artefactos generan detecciones adicionales o desplazadas.
 
---
+---
 
 <p align="center">
   <img src="7.png" width="700">
