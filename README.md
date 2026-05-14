@@ -154,6 +154,7 @@ Para que la frecuencia de muestreo y los niveles de cuantificación fueran aprop
 <p align="center">
   <em> Señal Original y Filtrada </em>
 </p>
+
 ---
 
 ```python
@@ -225,6 +226,18 @@ En el segmento 2 hay algunas detecciones imperfectas debido a que al haber artef
 
 ---
 
+```python
+# np.diff calcula la diferencia entre índices consecutivos de picos
+rr_1 = np.diff(picos_1) / fs   # → en segundos
+rr_2 = np.diff(picos_2) / fs
+
+# El tiempo de cada intervalo es el instante del segundo pico
+t_rr1 = t_2min[picos_1[1:]]
+t_rr2 = t_restante[picos_2[1:]]
+
+plt.plot(t_rr1, rr_1, marker='o')
+plt.plot(t_rr2, rr_2, marker='o')
+```
 <p align="center">
   <img src="7.png" width="700">
 </p>
@@ -232,6 +245,9 @@ En el segmento 2 hay algunas detecciones imperfectas debido a que al haber artef
 <p align="center">
   <em> Segmento 1 Nueva Señal </em>
 </p>
+
+Intervalos R-R oscilan entre 0.60 y 0.78 s de forma ordenada y ondulante. Esa variación rítmica corresponde a la arritmia sinusal respiratoria (RSA): el intervalo se alarga al inspirar y se acorta al espirar. FC media ≈ 80–90 bpm.
+
 <p align="center">
   <img src="8.png" width="700">
 </p>
@@ -240,8 +256,7 @@ En el segmento 2 hay algunas detecciones imperfectas debido a que al haber artef
   <em> Segmento 2 Nueva Señal </em>
 </p>
 
-
-
+Rango más amplio (0.55–0.80 s) con fluctuaciones más bruscas e irregulares. Indica mayor actividad del sistema nervioso autónomo y posiblemente la influencia de artefactos en la detección de picos.
 
 ----
 ### Parte B - Análisis de la HRV en el dominio del tiempo 
