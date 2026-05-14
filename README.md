@@ -154,7 +154,7 @@ Para que la frecuencia de muestreo y los niveles de cuantificación fueran aprop
 <p align="center">
   <em> Señal Original y Filtrada </em>
 </p>
-
+--
 <p align="center">
   <img src="3.png" width="700">
 </p>
@@ -182,6 +182,7 @@ t_restante   = t[indice_2min:]
 ```
 El segmento 1 (0–120 s) muestra picos muy uniformes a ~700 unidades porque el sujeto estaba en reposo estable. El filtro Kalman ya eliminó el ruido de línea base. El segmento 2 (120–245 s) tiene mayor variabilidad en amplitud y algunos picos anómalos visibles, lo que sugiere movimiento o cambio fisiológico durante esa parte del registro.
 
+--
 
 <p align="center">
   <img src="5.png" width="700">
