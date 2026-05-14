@@ -155,6 +155,7 @@ Para que la frecuencia de muestreo y los niveles de cuantificación fueran aprop
   <em> Señal Original y Filtrada </em>
 </p>
 --
+
 ```python
 tiempo_limite = 2 * 60        # 120 segundos
 indice_2min = int(tiempo_limite * fs)
@@ -184,6 +185,7 @@ El segmento 1 (0–120 s) muestra picos muy uniformes a ~700 unidades porque el 
 </p>
 
 El segmento 2 (120–245 s) tiene mayor variabilidad en amplitud y algunos picos anómalos visibles, lo que sugiere movimiento o cambio fisiológico durante esa parte del registro.
+
 --
 
 <p align="center">
