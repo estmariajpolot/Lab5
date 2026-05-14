@@ -346,5 +346,12 @@ CVI = log10(sd1 * sd2)   # Cardiac Vagal Index
 
 El análisis del diagrama de Poincaré y sus índices derivados permite concluir que durante el segmento 2 del registro hubo un desplazamiento del balance autonómico hacia una mayor predominancia simpática, evidenciado por el aumento del CSI de 1.9534 a 4.0277 y la reducción de SD1 de 0.0245 a 0.0186. El segmento 1 refleja un estado de mayor equilibrio entre las ramas simpática y parasimpática del sistema nervioso autónomo, con una variabilidad a corto plazo más elevada y un índice simpático menor. El CVI prácticamente estable entre ambos segmentos indica que el tono vagal basal del sujeto no experimentó cambios importantes a lo largo del registro.
 
+---
+### Conclusiones
+
+El análisis de la señal ECG de la sujeto permitió identificar dos estados fisiológicos diferenciados a lo largo del registro. Durante los primeros dos minutos, la señal filtrada mostró un comportamiento estable y uniforme, con picos R bien definidos y una frecuencia cardíaca media de 89.15 bpm, una STD R-R de 0.0382 s y un índice de actividad simpática CSI de 1.9534, valores que en conjunto reflejan un estado cardiovascular relativamente equilibrado con participación activa del sistema parasimpático. A partir del minuto 2, se evidenció un cambio fisiológico claro: la frecuencia cardíaca se incrementó a 93.48 bpm, la media R-R disminuyó de 0.6730 s a 0.6418 s, y el CSI casi se duplicó hasta alcanzar un valor de 4.0277, lo que indica un desplazamiento del balance autonómico hacia una mayor predominancia simpática, posiblemente asociada a movimiento o cambio postural del sujeto durante el registro. La STD R-R del segmento 2 fue de 0.0546 s, un 43 % mayor que la del segmento 1, aunque este valor debe interpretarse con cautela dado que los artefactos de movimiento presentes en ese segmento afectaron la detección de picos R e introdujeron intervalos R-R anómalos que inflaron artificialmente la desviación estándar. El CVI se mantuvo prácticamente constante entre ambos segmentos, con valores de −2.9312 y −2.8572, lo que sugiere que el tono vagal basal del sujeto no experimentó variaciones significativas a lo largo del registro.
+
+---
+### Bibliografía
 
 
