@@ -289,24 +289,62 @@ La comparación entre segmentos muestra un incremento de la frecuencia cardíaca
 ----
 ### Parte C - Construcción del diagrama de Poincaré 
 
+El diagrama de Poincaré es una herramienta de análisis no lineal de la HRV que consiste en graficar cada intervalo R-R contra el intervalo R-R inmediatamente siguiente, es decir, se representa el par (RR(n), RR(n+1)) como un punto en un plano cartesiano. La nube de puntos resultante adopta una forma elíptica característica cuya dispersión contiene información sobre la dinámica del sistema cardiovascular. Para construirlo, el código toma los arreglos de intervalos R-R de cada segmento y los desplaza en una posición:
+
+```python
+# Segmento 1
+rr1_x = rr_1[:-1]   # RR(n)
+rr1_y = rr_1[1:]    # RR(n+1)
+
+# Segmento 2
+rr2_x = rr_2[:-1]
+rr2_y = rr_2[1:]
+```
+De esta manera, cada punto del diagrama representa la transición de un latido al siguiente, y la forma de la nube revela si esas transiciones son regulares o caóticas.
+
 <p align="center">
   <img src="9.png" width="700">
 </p>
 <p align="center">
   <em> Segmento 1 Diagrama Poincaré  </em>
 </p>
+
+En el segmento 1, la nube de puntos se distribuye de forma relativamente compacta y alargada a lo largo de la diagonal principal del plano, con los puntos concentrados en torno a los valores 0.650–0.720 s en ambos ejes. La dispersión es moderada y la forma elíptica es clara, lo que indica que los intervalos R-R consecutivos tienen una correlación positiva fuerte: cuando un latido es largo, el siguiente también tiende a serlo, y viceversa. Este patrón es típico de la arritmia sinusal respiratoria en un estado fisiológico estable.
+
 <p align="center">
   <img src="10.png" width="700">
 </p>
 <p align="center">
   <em> Segmento 1 Diagrama Poincaré </em>
 </p>
+
+En el segmento 2, la nube de puntos se extiende sobre un rango más amplio, aproximadamente de 0.55 s a 0.80 s en ambos ejes, y su dispersión transversal es mayor que en el segmento 1. Esto indica una variabilidad latido a latido más elevada e irregular, coherente con el aumento de STD R-R observado en el dominio del tiempo. La mayor dispersión también refleja la influencia de artefactos de movimiento en ese segmento, que introducen puntos alejados del patrón central de la nube.
+
+---
+A partir de los diagramas de Poincaré se calcularon cuatro índices cuantitativos. SD1 y SD2 se obtienen como la desviación estándar de las proyecciones de los puntos sobre los ejes perpendicular y paralelo a la diagonal de identidad, respectivamente:
+
+```python
+# Segmento 1
+sd1_1 = np.std((rr1_y - rr1_x) / np.sqrt(2))   # dispersión transversal
+sd2_1 = np.std((rr1_y + rr1_x) / np.sqrt(2))   # dispersión longitudinal
+
+# Segmento 2
+sd1_2 = np.std((rr2_y - rr2_x) / np.sqrt(2))
+sd2_2 = np.std((rr2_y + rr2_x) / np.sqrt(2))
+```
+SD1 refleja la variabilidad a corto plazo, latido a latido, asociada principalmente a la actividad del sistema nervioso parasimpático. SD2 refleja la variabilidad a largo plazo, asociada tanto al sistema simpático como al parasimpático. A partir de SD1 y SD2 se calculan los índices CSI y CVI:
+```python
+CSI = sd2 / sd1          # Cardiac Sympathetic Index
+CVI = log10(sd1 * sd2)   # Cardiac Vagal Index
+```
 <p align="center">
   <img src="12.png" width="700">
 </p>
 <p align="center">
   <em> Datos Poincaré </em>
 </p>
+
+El análisis del diagrama de Poincaré y sus índices derivados permite concluir que durante el segmento 2 del registro hubo un desplazamiento del balance autonómico hacia una mayor predominancia simpática, evidenciado por el aumento del CSI de 1.9534 a 4.0277 y la reducción de SD1 de 0.0245 a 0.0186. El segmento 1 refleja un estado de mayor equilibrio entre las ramas simpática y parasimpática del sistema nervioso autónomo, con una variabilidad a corto plazo más elevada y un índice simpático menor. El CVI prácticamente estable entre ambos segmentos indica que el tono vagal basal del sujeto no experimentó cambios importantes a lo largo del registro.
 
 
 
