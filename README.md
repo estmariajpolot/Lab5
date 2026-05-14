@@ -133,10 +133,6 @@ Se selecciona una mujer de 20 años como sujeto de prueba para adquirir la seña
 
 La toma de la señal electrocardiográfica se realiza mediante un BITalino y la correcta conexión de los cables. El electrodo con cable de color blanco se ubica en la región subclavicular izquierda, el electrodo con cable de color negro en la región subclavicular derecha y, por último, el electrodo con cable de color rojo en las costillas derechas.
 
-Para que la frecuencia de muestreo y los niveles de cuantificación fueran apropiados para el tipo de señal se realizo una frecuencia de muestreo de 1000 Hz.
-
----
-
   <p align="center">
   <img src="1.png" width="700">
 </p>
@@ -144,6 +140,9 @@ Para que la frecuencia de muestreo y los niveles de cuantificación fueran aprop
 <p align="center">
   <em> Señal Original </em>
 </p>
+
+Para que la frecuencia de muestreo y los niveles de cuantificación fueran apropiados para el tipo de señal se realizo una frecuencia de muestreo de 1000 Hz.
+
 ---
 
 ### Parte B - Pre-procesamiento de la señal
