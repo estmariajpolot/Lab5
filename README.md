@@ -19,8 +19,33 @@ María José Polo Tovar – Código 5600894
 
 ---
 ## Descripción
+Este repositorio contiene el desarrollo de una práctica de laboratorio enfocada en el análisis de señales electrocardiográficas (ECG) y variabilidad de la frecuencia cardíaca (HRV). El objetivo principal fue evaluar cambios en la actividad cardíaca mediante el análisis temporal y no lineal de la señal ECG en dos segmentos del registro.
+
+La señal ECG fue cargada desde un archivo de texto y procesada en Python. Inicialmente, se aplicó un filtro de Kalman para reducir el ruido y mejorar la calidad de la señal. Posteriormente, la señal filtrada se dividió en dos segmentos temporales: de 0 a 2 minutos y desde los 2 minutos hasta el final del registro.
+
+En cada segmento se realizó la detección automática de picos R para calcular los intervalos R-R y construir las señales HRV. Luego, se calcularon parámetros en el dominio del tiempo, como la media RR, la desviación estándar y la frecuencia cardíaca promedio. Además, se realizó un análisis no lineal mediante diagramas de Poincaré, obteniendo índices SD1, SD2, CSI y CVI.
+
+Finalmente, los resultados fueron representados gráficamente para comparar el comportamiento cardíaco y la variabilidad autonómica entre ambos segmentos analizados.
+
 ---
 ##  Metodología 
+
+El desarrollo del análisis se estructuró en varias etapas principales, utilizando herramientas de programación en Python para el procesamiento y análisis de señales electrocardiográficas (ECG) y de variabilidad de la frecuencia cardíaca (HRV).
+
+En primer lugar, se realizó la carga del archivo de texto que contenía la señal ECG. A partir del encabezado del archivo, se extrajo automáticamente la frecuencia de muestreo mediante expresiones regulares, lo que permitió construir correctamente el vector de tiempo asociado a la señal. Posteriormente, se cargaron los datos utilizando la librería pandas y se obtuvo la señal ECG correspondiente. Finalmente, se realizó una gráfica de la señal original para visualizar su comportamiento inicial.
+
+En una segunda etapa, se implementó un filtro de Kalman con el propósito de reducir el ruido presente en la señal. Para ello, se calcularon parámetros iniciales como la media y la desviación estándar de los primeros 50 ms de la señal, utilizados para estimar las covarianzas del filtro. Posteriormente, se ejecutaron las etapas de predicción y corrección del algoritmo de Kalman de forma iterativa, obteniendo una señal ECG filtrada. Luego, se compararon gráficamente la señal original y la señal filtrada para verificar la mejora en la calidad de la señal.
+
+Posteriormente, la señal filtrada fue dividida en dos segmentos temporales: el primero comprendido entre 0 y 2 minutos, y el segundo desde los 2 minutos hasta el final del registro. Cada segmento fue representado gráficamente para facilitar su análisis independiente.
+
+En la siguiente etapa, se realizó la detección de picos R utilizando la función find_peaks de la librería scipy.signal. Para cada segmento se establecieron parámetros de distancia mínima, altura y prominencia, permitiendo identificar adecuadamente los complejos R del ECG. Los picos detectados fueron visualizados sobre las señales correspondientes mediante gráficas.
+
+A partir de los picos R detectados, se calcularon los intervalos R-R mediante la diferencia temporal entre picos consecutivos. Con estos intervalos se construyeron las señales de variabilidad de la frecuencia cardíaca (HRV) para ambos segmentos, las cuales fueron representadas gráficamente para observar las variaciones temporales de la actividad cardíaca.
+
+Finalmente, se calcularon parámetros de HRV en el dominio del tiempo, incluyendo la media de los intervalos R-R, la desviación estándar y la frecuencia cardíaca promedio. Adicionalmente, se realizó un análisis no lineal mediante diagramas de Poincaré, donde se graficaron los intervalos RR(n) frente a RR(n+1). A partir de estos diagramas se obtuvieron los índices SD1 y SD2, relacionados con la variabilidad de corto y largo plazo, así como los índices CSI y CVI, asociados a la actividad simpática y vagal del sistema nervioso autónomo.
+
+En conjunto, este procedimiento permitió analizar el comportamiento temporal y no lineal de la señal ECG y de la HRV, facilitando la evaluación de cambios en la regulación autonómica cardíaca entre los diferentes segmentos estudiados.
+
 ---
 ## Diagrama de Flujo
 ---
