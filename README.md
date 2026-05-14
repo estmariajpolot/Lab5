@@ -261,12 +261,30 @@ Rango más amplio (0.55–0.80 s) con fluctuaciones más bruscas e irregulares. 
 ----
 ### Parte B - Análisis de la HRV en el dominio del tiempo 
 
+```python
+# PARÁMETROS HRV EN DOMINIO DEL TIEMPO
+
+# Media de los intervalos R-R
+media_rr1 = np.mean(rr_1)      # → 0.6730 s
+media_rr2 = np.mean(rr_2)      # → 0.6418 s
+
+# Desviación estándar de los intervalos R-R
+std_rr1 = np.std(rr_1)        # → 0.0382 s
+std_rr2 = np.std(rr_2)        # → 0.0546 s
+
+# Frecuencia cardíaca media = 60 / media_RR
+fc1 = 60 / media_rr1           # → 89.15 bpm
+fc2 = 60 / media_rr2           # → 93.48 bpm
+```
+
 <p align="center">
   <img src="11.png" width="700">
 </p>
 <p align="center">
   <em> Datos HRV </em>
 </p>
+
+La comparación entre segmentos muestra un incremento de la frecuencia cardíaca de aproximadamente 4.3 bpm y una mayor variabilidad aparente en el segmento 2. El segmento 1 refleja un estado fisiológico más estable y sus parámetros son más representativos del estado basal del sujeto. El aumento de la STD R-R en el segmento 2 debe considerarse parcialmente artefactual. En conjunto, los datos sugieren que hubo un cambio en las condiciones del sujeto a partir del minuto 2 del registro, posiblemente asociado a movimiento o cambio postural, lo cual se manifiesta tanto en la aceleración de la frecuencia cardíaca como en la mayor irregularidad de los intervalos R-R observada en la señal HRV.
 
 ----
 ### Parte C - Construcción del diagrama de Poincaré 
