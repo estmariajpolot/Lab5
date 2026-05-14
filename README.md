@@ -170,6 +170,19 @@ Para que la frecuencia de muestreo y los niveles de cuantificación fueran aprop
   <em> Segmento 2 </em>
 </p>
 
+```python
+tiempo_limite = 2 * 60        # 120 segundos
+indice_2min = int(tiempo_limite * fs)
+
+ecg_2min    = x_est[:indice_2min]   # Segmento 1: 0–120 s
+t_2min      = t[:indice_2min]
+
+ecg_restante = x_est[indice_2min:]  # Segmento 2: 120 s – final
+t_restante   = t[indice_2min:]
+```
+El segmento 1 (0–120 s) muestra picos muy uniformes a ~700 unidades porque el sujeto estaba en reposo estable. El filtro Kalman ya eliminó el ruido de línea base. El segmento 2 (120–245 s) tiene mayor variabilidad en amplitud y algunos picos anómalos visibles, lo que sugiere movimiento o cambio fisiológico durante esa parte del registro.
+
+
 <p align="center">
   <img src="5.png" width="700">
 </p>
