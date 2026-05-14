@@ -48,6 +48,14 @@ En conjunto, este procedimiento permitió analizar el comportamiento temporal y 
 
 ---
 ## Diagrama de Flujo
+  <p align="center">
+  <img src="Diagrama...jpeg" width="700">
+</p>
+
+<p align="center">
+  <em> Plan de acción diagrama de flujo </em>
+</p>
+
 ---
 ### Parte A — Fundamento teórico
 
