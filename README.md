@@ -386,5 +386,11 @@ El análisis de la señal ECG de la sujeto permitió identificar dos estados fis
 
 ---
 ### Bibliografía
+Akselrod, S., Gordon, D., Ubel, F.A., Shannon, D.C., Barger, A.C.
+and Cohen, R.J., Power spectrum analysis of heart rate function. A
+quantitative probe of beat-to-beat cardiovascular control, Science,
+213 1981 220–222
 
+Acharya, U. R., Joseph, K. P., Kannathal, N., Lim, C. M., & Suri, J. S. (2006). Heart rate variability: A review. Medical and Biological Engineering and Computing, 44(12), 1031–1051. https://doi.org/10.1007/s11517-006-0119-0
 
+Brennan, M., Palaniswami, M., & Kamen, P. (2001). Do existing measures of Poincaré plot geometry reflect nonlinear features of heart rate variability? IEEE Transactions on Biomedical Engineering, 48(11), 1342–1347. https://doi.org/10.1109/10.954804
