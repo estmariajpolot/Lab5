@@ -188,6 +188,12 @@ Para que la frecuencia de muestreo y los niveles de cuantificación fueran aprop
   <em> Señal Original y Filtrada </em>
 </p>
 
+**Diseño e implementación del filtro de Kalman**
+
+Para eliminar el ruido de la señal ECG se implementó un filtro de Kalman escalar que opera muestra a muestra. La inicialización parte de los primeros 50 ms de la señal, calculados como `muestras_50ms = int(0.05 * fs)`, de donde se extraen la media inicial `media_ini = np.mean(inicio)` y la desviación estándar `desv_ini = np.std(inicio)`. A partir de estos valores se definen los dos parámetros clave del filtro: el ruido de medición `R = desv_ini**2`, que representa la incertidumbre de cada muestra del ECG, y el ruido del proceso `Q = 0.01 * R`, intencionalmente pequeño porque la señal ECG cambia lentamente entre muestras consecutivas. El estado inicial se establece con `x_est[0] = media_ini` y el error de estimación inicial en `P = 0`.
+
+Durante la ejecución, el filtro recorre cada muestra en un ciclo iterativo ejecutando tres pasos: primero predice la siguiente muestra asumiendo que será similar a la anterior (`x_pred = x_est[k-1]`) y actualiza la incertidumbre (`P_pred = P + Q`); luego calcula la ganancia de Kalman `K = P_pred / (P_pred + R)`, que pondera cuánto confiar en la predicción frente a la medición real; y finalmente corrige la estimación con `x_est[k] = x_pred + K * (ecg[k] - x_pred)` y actualiza el error con `P = (1 - K) * P_pred`. Este mecanismo permite que el filtro atenúe el ruido progresivamente sin distorsionar la morfología de la señal, produciendo la señal filtrada `x_est` que sirve como base para todo el análisis posterior.
+
 ---
 
 ```python
